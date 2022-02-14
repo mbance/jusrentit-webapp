@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>JusRentit</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+<body>
+    <div class="bg">
+        <div id="lower"></div>
+        <div id="login">
+            <div class="logo">
+                <h1>JusRentit</h1>
+            </div>
+            
+            <form action="/data.php", method='get'>
+                <table>
+                    <tr><td>Sign In</td><td></td></tr>
+                    <tr><td><input type="text" class="text" name="username" placeholder="Username:" id="username"></td></tr>
+        
+                    <tr><td><input type="password" class="text" name="password" placeholder="Password:" id="password"></td><td><input type="submit" class="text" value="Login"/></td></tr>
+                
+                    <tr><td><input type="button"  class="button" onclick="location.href='Main-Page.html';" value="Guest Login"/></td><td></td></tr>
+                </table>
+            </form>
+            <p id="ajax" onclick="loadDoc()" > Not a registered member? Click me!</p>
+        </div>
+    </div>        
+<!--    https://www.w3schools.com/xml/tryit.asp?filename=tryajax_first  -->
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("login").innerHTML =
+                    this.responseText;
+                }
+            }
+            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.send();
+        }
+    </script>
+    
+</body>
+</html>
+        

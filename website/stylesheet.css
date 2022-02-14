@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+ output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container {
+    margin: 0 60px;
+}
+.header {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+.header .name {
+    float: left;
+    width: auto;
+}
+.name {
+    font-size: 50px;
+    position: relative;
+    bottom: 20px
+}
+.header .menu {
+    float: left;
+    margin-left: 70px;
+}
+.menu ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.menu ul li a  {
+    text-decoration: none;
+    color: #52575d;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header .User-Interface {
+    float: right;
+}
+.user-resize {
+    position: relative;
+    width: 30;
+    height: 30;
+    margin-left: 15px;
+    bottom: 10px;
+}
+.header .rent {
+    float: right;
+}
+.rent a {
+    text-decoration: none;
+    position: relative;
+    color: #52575d;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header .cart {
+    float: right;
+}
+.cart-resize {
+    position: relative;
+    width: 30;
+    height: 30;
+    margin-left: 10px;
+    bottom: 10px;
+}
+.searchbar {
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.search-field {
+    height: 50px;
+    padding: 10px;
+}
+.item {
+    width: 400px;
+}
+.location {
+    width: 200px;
+}
+.search-btn {
+    height: 50px;
+    width: 150px;
+    border: none;
+    background: darkgrey;;
+    color: white;
+}
+.search-btn:hover {
+    background: black;
+    cursor:pointer;
+}
+.form-box {
+    display: inline-block;
+    background: rgba(220,220,220, 0.5);
+    padding: 30px 50px;
+    position: relative;
+    top: 40px;
+}
+.slider {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 200px;
+}
+.slider img {
+    display: block;
+    position: relative;
+    height: 500px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider .slider-text1 {
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 450px;
+    border: none;
+}
+.slider .slider-text1 h1 {
+    font-size: 35px;
+    color: white;
+    line-height: 45px;
+}
+.slider .slider-text1 p {
+    font-size: 16px;
+    color: white;
+    padding: 10px 0;
+    line-height: 22px;
+}
+.slider .slider-text1 a {
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.products {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 200;
+}
+.heading {
+    padding: 60px 0;
+}
+.heading h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.product-listing {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+.item1 {
+    width: 15%;
+    margin-left: 50px;
+    float: left;
+}
+.item-image {
+    position: relative;
+}
+.item-image img {
+    max-width: 100%;
+}
+.item-image .item-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px 25px;
+    width: 0;
+    height: 100%;
+    background-color: rgba(220,220,220,0.7);
+    text-align: center;
+    opacity: 0;
+}
+.item-image .item-button a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.item-title {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+.item-title h5 {
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.item1:hover .item-button {
+    width: 100%;
+    opacity: 1;
+}
+.footer {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: black;
+    background-size: cover;
+    padding: 25px 0;
+    position: relative;
+    top: 300;
+    margin-top: 45px;
+}
+.footer-menu {
+    padding: 5px 0;
+}
+.footer-menu ul li {
+    display: inline-block;
+    margin: 0 15px;;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+p.copyright {
+    color: #898989;
+    margin: 30px 0;
+    font-size: 15px;
+}
+
+/* -------------------------------------------------- */
+.bg {
+    height: 100%;
+    background-image: url(images/blur.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lower {
+    height: 25%;
+}
+.logo {
+    text-align: center;
+    font-size: 80px;
+    border-bottom: solid 3px black;
+}
+#ajax {
+    text-align: center;
+    color: ivory;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+#login {
+    border: 3px solid black ;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 25px;
+    background-color: #737982;
+    opacity: 0.7;
+}
+table {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    z-index: 1;
+    width: 35%; 
+    height: 15%; 
+}
+.button {
+    border-radius: 8px;
+    background-color: #204c93;
+    border: none;
+    color:ivory;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    padding: 10px 32px;
+}
+body,html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.text {
+    font-size: 16px;
+}
+td {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+th {
+    font-size: 34px;
+}
+#location {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px solid black;
+
+}
+#head {
+    text-decoration-line: underline;
+    padding: 10px;
+    margin-left: 15%;
+    text-align: left;
+    font-size: 30px;
+}
+
+placeholder {
+    float: right;
+    color: red;
+}
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}

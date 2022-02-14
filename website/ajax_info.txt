@@ -1,0 +1,21 @@
+<div class="logo">
+                <h1>Become a JusRentit member!</h1>
+            </div>
+
+<form method='post'>
+    <table>
+        <tr><td>Enter a valid username: </td><td><input type="text" name="username" id="username"></td></tr>
+        
+        <tr><td>Enter a valid email: </td><td><input type="text" name="email" id="email"></td></tr>
+        
+        <tr><td>Enter a valid password: </td><td><input type="password" name="password" id="password"></td></tr>
+        
+        <tr><td></td><td><input type="submit" value="Submit" /></td></tr>
+        
+        <td></td> <td><input type="button" onclick="location.href='Login.html';" value="Back to login"/></td><td></td>
+
+        
+    </table>
+</form>
+
+
